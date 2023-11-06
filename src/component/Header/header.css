@@ -1,0 +1,63 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: tomato;
+}
+nav ul{
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul input{
+    width: 600px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: 0;
+}
+nav ul li:last-child a{
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.drpdwn-container{
+    position: relative;
+}
+.drpdwn-container:hover .drpdwn-child{
+    display: block;
+}
+.drpdwn-child{
+    position: absolute;
+    right: 0;
+    top: 27px;
+    width: 200px;
+    z-index: 1;
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    display: none;
+    transition: all .5s;
+}
+.drpdwn-child ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    width: 100%;
+}
+.drpdwn-child ul li{
+    border-bottom: 1px solid black;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.drpdwn-child ul li:hover ,nav ul li:last-child a:hover{
+    background-color: rgb(26, 26, 26);
+}
